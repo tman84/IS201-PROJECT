@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: blue; /* Text color blue */
+}
+
+section {
+    margin-top: 20px;
+}
+
+.intro, .bio, .image-section {
+    margin-bottom: 20px;
+}
+
+.arrow-section {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section h2 {
+    margin-top: 0;
+}
+
+.resume-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume-section ul li {
+    margin-bottom: 10px;
+}
+
+.resume-section ul li span {
+    font-weight: bold;
+}
+
+.video-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-section h3 {
+    margin-top: 20px;
+}
