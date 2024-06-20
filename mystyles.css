@@ -1,78 +1,144 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #d3d3d3; /* Light grey background */
+    background-color: #8f8f8f; 
     margin: 0;
     padding: 0;
+    overflow-x: hidden; 
 }
 
-header, nav, section, footer {
-    margin: 20px;
+header {
+    text-align: center;
+    background-color: transparent;
     padding: 20px;
-    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: black;
+}
+
+header nav {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 2;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: border-bottom 0.3s;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+.intro {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+}
+
+.overlay .text {
+    font-size: 3em;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.resume-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: blue; /* Text color blue */
-}
-
-section {
-    margin-top: 20px;
-}
-
-.intro, .bio, .image-section {
+.image-section {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
-}
-
-.arrow-section {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.arrow {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #666;
 }
 
 .image-section img {
-    max-width: 100%;
+    width: 300px; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.resume-section h2 {
-    margin-top: 0;
-}
-
-.resume-section ul {
+.resume-section .resume-content ul {
     list-style-type: none;
     padding: 0;
 }
 
-.resume-section ul li {
+.resume-section .resume-content ul li {
     margin-bottom: 10px;
 }
 
-.resume-section ul li span {
-    font-weight: bold;
+.about-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 60px; 
+    box-sizing: border-box; 
 }
 
-.video-section {
+
+
+footer {
     text-align: center;
-    margin: 20px 0;
-}
-
-.about-section h3 {
-    margin-top: 20px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: transparent;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
